@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel>
+<schema name="public" rect-visible="true" fill-color="#e1e1e1">
+</schema>
+
+<schema name="main" fill-color="#e1e1e1">
+</schema>
+
+<database name="WSSonar" encoding="UTF8">
+</database>
+
+<table name="Web_Service" oids="true">
+	<schema name="main"/>
+	<position x="172" y="124"/>
+	<column name="ws_id" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="ws_name" not-null="true">
+		<type name="varchar" length="40"/>
+	</column>
+	<column name="ws_description">
+		<type name="varchar" length="100"/>
+	</column>
+	<column name="ws_status" not-null="true">
+		<type name="boolean"/>
+	</column>
+	<column name="ws_count_total" default-value="0">
+		<type name="integer"/>
+	</column>
+	<column name="ws_count_positive" default-value="0">
+		<type name="integer"/>
+	</column>
+	<column name="ws_count_negative" default-value="0">
+		<type name="integer"/>
+	</column>
+	<constraint name="ws_id_pk" type="pk-constr" factor="10" table="main.&quot;Web_Service&quot;">
+		<columns names="ws_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="History" oids="true">
+	<schema name="main"/>
+	<position x="638" y="105"/>
+	<column name="ht_id" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="ht_id_web_service" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="ht_down_date" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<column name="ht_back_online">
+		<type name="timestamp"/>
+	</column>
+	<column name="ht_error_result">
+		<type name="varchar" length="250"/>
+	</column>
+	<constraint name="ht_id_pk" type="pk-constr" factor="10" table="main.&quot;History&quot;">
+		<columns names="ht_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<constraint name="ht_id_web_service_fk" type="fk-constr"	 comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="main.&quot;Web_Service&quot;" table="main.&quot;History&quot;">
+	<columns names="ht_id_web_service" ref-type="src-columns"/>
+	<columns names="ws_id" ref-type="dst-columns"/>
+</constraint>
+<relationship name="rel_History_Web_Service"
+	 type="relfk"
+	 src-required="false" dst-required="false"
+	 src-table="main.&quot;History&quot;"
+	 dst-table="main.&quot;Web_Service&quot;"/>
+
+<table name="User" oids="true">
+	<schema name="main"/>
+	<position x="402" y="355"/>
+	<column name="us_id" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="us_name" not-null="true">
+		<type name="varchar" length="70"/>
+	</column>
+	<column name="us_username" not-null="true">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="us_password" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="us_email" not-null="true">
+		<type name="varchar" length="100"/>
+	</column>
+	<constraint name="us_id_pk" type="pk-constr" factor="10" table="main.&quot;User&quot;">
+		<columns names="us_id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="us_username_uq" type="uq-constr" factor="10" table="main.&quot;User&quot;">
+		<columns names="us_username" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+</dbmodel>

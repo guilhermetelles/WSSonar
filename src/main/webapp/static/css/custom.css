@@ -1,0 +1,67 @@
+/* .col-centered { */
+/* 	float: none; */
+/* 	margin: 0 auto; */
+/* } */
+
+.col-centered {
+	
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.opt_collumm {
+	width: 170px;
+}
+
+.opt_data {
+	margin-right: 10px;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.report-bottom {
+	margin-top: 6px; 
+	margin-left: 15px;
+}
+
+.datepicker {
+	width: 200px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* /* Menu Color */ */
+/* .side-nav { */
+/* 	/*     background-color: #222222; */ */
+/* 	background-color: #428BCA; */
+/* } */
+
+/* /* Menu - Letter color */ */
+/* .navbar-inverse .navbar-nav>li>a { */
+/* /* 	color: #999999; */ */
+/* 	color: #FFFFFF; */
+/* } */
+
+/* /* Menu - Selected Item Color  */ */
+/* .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus */
+/* 	{ */
+/* /* 	background-color: #080808; */ */
+/* 	background-color: #2D6987; */
+/* 	color: #FFFFFF; */
+/* } */
+
+/* .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { */
+/*     border-color: #428BCA; */
+/* } */

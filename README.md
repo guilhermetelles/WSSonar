@@ -18,8 +18,10 @@ TODO:
 * Enhance security
 * Create better logs
 
-+ Database scripts and model in the utils folder
-+ Information from web-services was excluded for obvious reasons.
+
+PS: Database scripts and model in the utils folder
+PS²: Information from web-services was excluded for obvious reasons.
+
 
 
 Moved from Bitbucket.

@@ -1,9 +1,12 @@
 # WSSonar
 
+###Description
+
 Web Service Sonar(WSSonar) is a web application that constantly monitors web services and generates reports based on it's uptime.
 Using individual methods for each web service, it takes account not only if the web service is online, but if it's working correctly by it's response.
 
-Features include:
+###Features include:
+
 * Charts (morris.js)
 * Full downtime reports with ocurred error 
 * Report download (.xls - Apache POI)
@@ -11,9 +14,18 @@ Features include:
 * User management
 * Password encryption (BCrypt)
 
+###Technology
+
 Besides what was already mentioned this application was created using Java, Maven, JBoss AS 7.1.1, Spring MVC, Spring Data JPA, JSTL, Bootstrap and Postgres.
 
-TODO:
+###Screenshots
+
+![img](http://imgur.com/LN32VDV)
+![](http://imgur.com/G9vlOEs)
+![](http://imgur.com/EeveD3u)
+
+###TODO:
+
 * Enable monitoring on server start instead of the current mechanism (!)
 * Enhance security
 * Create better logs

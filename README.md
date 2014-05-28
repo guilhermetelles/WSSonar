@@ -20,9 +20,9 @@ Besides what was already mentioned this application was created using Java, Mave
 
 ###Screenshots
 
-![img](http://imgur.com/LN32VDV)
-![](http://imgur.com/G9vlOEs)
-![](http://imgur.com/EeveD3u)
+![](http://i.imgur.com/LN32VDV.png)
+![](http://i.imgur.com/G9vlOEs.png)
+![](http://i.imgur.com/EeveD3u.png)
 
 ###TODO:
 

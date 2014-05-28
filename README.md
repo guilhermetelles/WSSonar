@@ -33,6 +33,7 @@ Besides what was already mentioned this application was created using Java, Mave
 
 
 PS: Database scripts and model in the utils folder
+
 PS²: Information from web-services was excluded for obvious reasons.
 
 

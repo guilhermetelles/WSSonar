@@ -3,7 +3,7 @@
 ###Description
 
 Web Service Sonar(WSSonar) is a web application that constantly monitors web services and generates reports based on it's uptime.
-Using individual methods for each web service, it takes account not only if the web service is online, but if it's working correctly by it's response.
+Using individual methods for each web service, it takes account not only if the web service is online, but if it's working correctly, by it's response.
 
 ###Features include:
 
